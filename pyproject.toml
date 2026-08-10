@@ -1,0 +1,63 @@
+[build-system]
+requires = ["hatchling>=1.27"]
+build-backend = "hatchling.build"
+
+[project]
+name = "bookstack-cli"
+version = "0.1.0"
+description = "Python client library and CLI for the BookStack REST API."
+readme = "README.md"
+requires-python = ">=3.14"
+license = "MIT"
+authors = [{ name = "Seif Reed" }]
+keywords = ["bookstack", "cli", "api"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3.14",
+    "Topic :: Internet :: WWW/HTTP",
+]
+
+[project.urls]
+Homepage = "https://github.com/seifreed/bookstack-cli"
+Issues = "https://github.com/seifreed/bookstack-cli/issues"
+
+[project.scripts]
+bookstack = "bookstack_cli.cli:main"
+
+[dependency-groups]
+dev = [
+    "bandit>=1.9.4",
+    "black>=26.5.1",
+    "mypy>=2.3.0",
+    "pip-audit>=2.10.1",
+    "pytest>=8.4",
+    "pytest-cov>=7.1.0",
+    "ruff>=0.15.21",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/bookstack_cli"]
+
+[tool.black]
+line-length = 120
+target-version = ["py314"]
+
+[tool.ruff]
+line-length = 120
+target-version = "py314"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM"]
+
+[tool.pytest.ini_options]
+markers = [
+    "integration: tests that require a live local BookStack instance",
+]
+testpaths = ["tests"]
+
+[tool.mypy]
+python_version = "3.14"
+strict = true
+files = ["src/bookstack_cli"]
