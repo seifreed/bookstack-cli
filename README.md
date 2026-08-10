@@ -1,22 +1,22 @@
 <p align="center">
-  <img src="https://img.shields.io/badge/bookstack--client-BookStack%20API-blue?style=for-the-badge" alt="bookstack-client">
+  <img src="https://img.shields.io/badge/bookstack--client-BookStack%20API-blue?style=for-the-badge" alt="bookstack-clientent">
 </p>
 
-<h1 align="center">bookstack-client</h1>
+<h1 align="center">bookstack-clientent</h1>
 
 <p align="center">
   <strong>Python 3.14 CLI and library for the BookStack REST API</strong>
 </p>
 
 <p align="center">
-  <a href="https://pypi.org/project/bookstack-client/"><img src="https://img.shields.io/pypi/v/bookstack-client?style=flat-square&logo=pypi&logoColor=white" alt="PyPI Version"></a>
-  <a href="https://pypi.org/project/bookstack-client/"><img src="https://img.shields.io/pypi/pyversions/bookstack-client?style=flat-square&logo=python&logoColor=white" alt="Python Versions"></a>
-  <a href="https://github.com/seifreed/bookstack-cli/blob/main/pyproject.toml"><img src="https://img.shields.io/badge/license-MIT-green?style=flat-square" alt="License"></a>
+  <a href="https://pypi.org/project/bookstack-clientent/"><img src="https://img.shields.io/pypi/v/bookstack-clientent?style=flat-square&logo=pypi&logoColor=white" alt="PyPI Version"></a>
+  <a href="https://pypi.org/project/bookstack-clientent/"><img src="https://img.shields.io/pypi/pyversions/bookstack-clientent?style=flat-square&logo=python&logoColor=white" alt="Python Versions"></a>
+  <a href="https://github.com/seifreed/bookstack-client/blob/main/pyproject.toml"><img src="https://img.shields.io/badge/license-MIT-green?style=flat-square" alt="License"></a>
 </p>
 
 <p align="center">
-  <a href="https://github.com/seifreed/bookstack-cli/stargazers"><img src="https://img.shields.io/github/stars/seifreed/bookstack-cli?style=flat-square" alt="GitHub Stars"></a>
-  <a href="https://github.com/seifreed/bookstack-cli/issues"><img src="https://img.shields.io/github/issues/seifreed/bookstack-cli?style=flat-square" alt="GitHub Issues"></a>
+  <a href="https://github.com/seifreed/bookstack-client/stargazers"><img src="https://img.shields.io/github/stars/seifreed/bookstack-client?style=flat-square" alt="GitHub Stars"></a>
+  <a href="https://github.com/seifreed/bookstack-client/issues"><img src="https://img.shields.io/github/issues/seifreed/bookstack-client?style=flat-square" alt="GitHub Issues"></a>
   <a href="https://buymeacoffee.com/seifreed"><img src="https://img.shields.io/badge/Buy%20Me%20a%20Coffee-support-yellow?style=flat-square&logo=buy-me-a-coffee&logoColor=white" alt="Buy Me a Coffee"></a>
 </p>
 
@@ -24,7 +24,7 @@
 
 ## Overview
 
-**bookstack-client** is a Python package for working with the [BookStack REST API](https://demo.bookstackapp.com/api/docs) from scripts or the command line. It provides a small typed client, environment-based configuration, JSON output, and parallel batch reads.
+**bookstack-clientent** is a Python package for working with the [BookStack REST API](https://demo.bookstackapp.com/api/docs) from scripts or the command line. It provides a small typed client, environment-based configuration, JSON output, and parallel batch reads.
 
 BookStack authentication uses:
 
@@ -69,14 +69,14 @@ Batch reads      Parallel get by IDs
 ### From PyPI
 
 ```bash
-pip install bookstack-client
+pip install bookstack-clientent
 ```
 
 ### From Source
 
 ```bash
-git clone https://github.com/seifreed/bookstack-cli.git
-cd bookstack-cli
+git clone https://github.com/seifreed/bookstack-client.git
+cd bookstack-client
 python3 -m venv venv
 source venv/bin/activate  # Windows: venv\Scripts\activate
 pip install -e .
@@ -579,7 +579,7 @@ This project is licensed under the MIT license. See [pyproject.toml](pyproject.t
 
 **Attribution**
 - Author: **seifreed** | [@seifreed](https://github.com/seifreed)
-- Repository: [github.com/seifreed/bookstack-cli](https://github.com/seifreed/bookstack-cli)
+- Repository: [github.com/seifreed/bookstack-client](https://github.com/seifreed/bookstack-client)
 
 ---
 
