@@ -578,7 +578,7 @@ If this project is useful in your workflows, you can support development:
 This project is licensed under the MIT license. See [pyproject.toml](pyproject.toml).
 
 **Attribution**
-- Author: **Seif Reed** | [@seifreed](https://github.com/seifreed)
+- Author: **seifreed** | [@seifreed](https://github.com/seifreed)
 - Repository: [github.com/seifreed/bookstack-cli](https://github.com/seifreed/bookstack-cli)
 
 ---
