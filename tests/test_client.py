@@ -91,10 +91,10 @@ def test_multipart_escapes_quotes_in_field_name(monkeypatch, client):
     assert b'name="weird\\"name"' in seen["data"]
 
 
-def test_multipart_escapes_quotes_in_filename(monkeypatch, tmp_path, client):
+def test_multipart_escapes_quotes_in_filename(monkeypatch, client):
+    # '"' is a reserved character in Windows filenames, so this can't be a real file.
     seen = {}
-    upload = tmp_path / 'evil".png'
-    upload.write_bytes(b"data")
+    upload = FakeUpload('evil".png', b"data")
 
     def fake_urlopen(request, timeout):
         seen["data"] = request.data
@@ -445,6 +445,15 @@ def test_network_error_raises_api_error(monkeypatch, client):
 
     assert str(error.value) == "BookStack API error 0: network down"
     assert error.value.payload is None
+
+
+class FakeUpload:
+    def __init__(self, name, data):
+        self.name = name
+        self._data = data
+
+    def read_bytes(self):
+        return self._data
 
 
 class Response:
