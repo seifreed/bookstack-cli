@@ -85,7 +85,7 @@ wheels = [
 ]
 
 [[package]]
-name = "bookstack-cli"
+name = "bookstack-client"
 version = "0.1.0"
 source = { editable = "." }
 

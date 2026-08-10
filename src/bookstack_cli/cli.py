@@ -245,7 +245,7 @@ def _add_content_type_argument(parser: argparse.ArgumentParser) -> None:
 
 def _version() -> str:
     try:
-        return _package_version("bookstack-cli")
+        return _package_version("bookstack-client")
     except PackageNotFoundError:
         return "unknown"
 

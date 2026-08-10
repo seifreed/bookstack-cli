@@ -3,7 +3,7 @@ requires = ["hatchling>=1.27"]
 build-backend = "hatchling.build"
 
 [project]
-name = "bookstack-cli"
+name = "bookstack-client"
 version = "0.1.0"
 description = "Python client library and CLI for the BookStack REST API."
 readme = "README.md"

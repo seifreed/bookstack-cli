@@ -67,7 +67,7 @@ class BookStackTransport:
         headers = {
             "Accept": "*/*",
             "Authorization": self.config.authorization,
-            "User-Agent": "bookstack-cli/0.1.0",
+            "User-Agent": "bookstack-client/0.1.0",
         }
         if content_type is not None:
             headers["Content-Type"] = content_type
