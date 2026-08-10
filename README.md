@@ -1,16 +1,16 @@
 <p align="center">
-  <img src="https://img.shields.io/badge/bookstack--client-BookStack%20API-blue?style=for-the-badge" alt="bookstack-clientent">
+  <img src="https://img.shields.io/badge/bookstack--client-BookStack%20API-blue?style=for-the-badge" alt="bookstack-client">
 </p>
 
-<h1 align="center">bookstack-clientent</h1>
+<h1 align="center">bookstack-client</h1>
 
 <p align="center">
   <strong>Python 3.14 CLI and library for the BookStack REST API</strong>
 </p>
 
 <p align="center">
-  <a href="https://pypi.org/project/bookstack-clientent/"><img src="https://img.shields.io/pypi/v/bookstack-clientent?style=flat-square&logo=pypi&logoColor=white" alt="PyPI Version"></a>
-  <a href="https://pypi.org/project/bookstack-clientent/"><img src="https://img.shields.io/pypi/pyversions/bookstack-clientent?style=flat-square&logo=python&logoColor=white" alt="Python Versions"></a>
+  <a href="https://pypi.org/project/bookstack-client/"><img src="https://img.shields.io/pypi/v/bookstack-client?style=flat-square&logo=pypi&logoColor=white" alt="PyPI Version"></a>
+  <a href="https://pypi.org/project/bookstack-client/"><img src="https://img.shields.io/pypi/pyversions/bookstack-client?style=flat-square&logo=python&logoColor=white" alt="Python Versions"></a>
   <a href="https://github.com/seifreed/bookstack-client/blob/main/pyproject.toml"><img src="https://img.shields.io/badge/license-MIT-green?style=flat-square" alt="License"></a>
 </p>
 
@@ -24,7 +24,7 @@
 
 ## Overview
 
-**bookstack-clientent** is a Python package for working with the [BookStack REST API](https://demo.bookstackapp.com/api/docs) from scripts or the command line. It provides a small typed client, environment-based configuration, JSON output, and parallel batch reads.
+**bookstack-client** is a Python package for working with the [BookStack REST API](https://demo.bookstackapp.com/api/docs) from scripts or the command line. It provides a small typed client, environment-based configuration, JSON output, and parallel batch reads.
 
 BookStack authentication uses:
 
@@ -69,7 +69,7 @@ Batch reads      Parallel get by IDs
 ### From PyPI
 
 ```bash
-pip install bookstack-clientent
+pip install bookstack-client
 ```
 
 ### From Source
